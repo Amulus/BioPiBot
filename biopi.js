@@ -37,12 +37,6 @@ client.on('message', message => {
     message.reply('Commande inconnue');
   }
 
-  try {
-    let commandFile = require(`./commands/${command}.js`);
-    commandFile.run(client, message, args);
-  } catch (err) {
-    console.error(err);
-  }
 });
 
 // Log our bot in
