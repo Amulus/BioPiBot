@@ -27,7 +27,7 @@ client.on('message', message => {
   if(command in CommandList){
     try {
       console.log('try\n');
-      let cFile = require(`./commands/${command}.js`);
+      let cFile = require(`./commands/${command}/${command}.js`);
       cFile.run(client, message, args);
     } catch (err) {
       console.error(err);
