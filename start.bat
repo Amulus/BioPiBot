@@ -1,0 +1,2 @@
+node biopi.js
+pause
