@@ -8,7 +8,9 @@ const config = require("./botconfig.json");
 const CommandList = {
   st : undefined,
   help : undefined,
-  ping : undefined
+  ping : undefined,
+  bots : undefined,
+  stopbot : undefined
 };
   
 client.on('ready', () => {
